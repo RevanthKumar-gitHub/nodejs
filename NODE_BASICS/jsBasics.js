@@ -1,1 +1,5 @@
-console.log("Hello js");
+const obj = {
+    name : "Revanth"
+}
+
+console.log(obj);
