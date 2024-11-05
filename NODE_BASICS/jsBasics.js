@@ -1,5 +1,5 @@
-const obj = {
-    name : "Revanth"
-}
+var personName = "revanth"
 
-console.log(obj);
+console.log(personName);
+
+
