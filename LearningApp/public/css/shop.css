@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.nav-header
+{
+    background-color: #028266;
+    padding: 0px 20px;
+    
+}
+
+.nav{
+    padding: 10px;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0rem 2rem; 
+    list-style: none;
+}
+
+.nav ul li
+{
+    margin: 0px 10px;
+    font-weight: 400;
+}
+
+.nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover
+{
+    color: rgb(255, 252, 84);
+}
+
+.nav ul li a:active,.nav ul li a.active
+{
+    color:rgb(255, 252, 84);
+}
+
+.main
+{
+    padding: 8px 4rem;
+}
