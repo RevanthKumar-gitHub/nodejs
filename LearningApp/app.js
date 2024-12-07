@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
+const userRoutes = require("./routes/user");
 const errorControllers = require("./controllers/error");
 const cartRoutes = require("./routes/cart");
 const orderRoutes = require("./routes/order");
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
     .catch((err) => console.log(err));
 });
 
+app.use("/user",userRoutes);
 app.use("/admin", adminRoutes);
 app.use("/cart", cartRoutes);
 app.use(shopRoutes);
@@ -44,6 +46,8 @@ Order.belongsTo(User);
 User.hasMany(Order);
 Order.belongsToMany(Product,{through : OrderItem});
 Product.belongsToMany(Order,{through : OrderItem});
+
+
 
 sequelize
   .sync({})
